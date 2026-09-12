@@ -34,7 +34,7 @@ async def log_requests(request: Request, call_next):
     logging.info(
         "%s %s | status=%s | duration=%.3fs",
         request.method,
-        request.url.patxh,
+        request.url.path,
         response.status_code,
         duration,
     )
